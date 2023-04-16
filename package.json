@@ -1,4 +1,5 @@
 {
+  "name": "root",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -6,7 +7,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "clean": "turbo run clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
@@ -18,5 +19,8 @@
     "prettier-plugin-tailwindcss": "^0.1.11",
     "turbo": "latest"
   },
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@1.22.19",
+  "dependencies": {
+    "axios": "^1.3.5"
+  }
 }

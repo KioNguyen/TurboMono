@@ -1,0 +1,18 @@
+.showtimes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.showtimes > div {
+  margin-bottom: 5px;
+}
+.showtimes_button {
+  border-radius: 0;
+  border: 1px solid #7c7676;
+  opacity: 50%;
+  width: 8%;
+  height: 25px;
+  text-transform: uppercase;
+  color: black;
+  font-size: smaller;
+}
